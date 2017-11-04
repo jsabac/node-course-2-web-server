@@ -10,6 +10,7 @@ http.createServer(function (req, res) {
 const express = require('express');
 const hbs = require('hbs');
 const fs = require('fs');
+const port = process.env.PORT || 1337;
 
 var app = express();
 
@@ -70,6 +71,6 @@ app.get('/bad', (req, res) => {
     res.send({errorMessage:'Unable to fullfill request'});
 });
 
-app.listen(1337, () => {
-    console.log('Server is up on port 1337;');
+app.listen(port, () => {
+    console.log(`Server is up on port ${port}`);
 });
