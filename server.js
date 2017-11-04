@@ -62,9 +62,16 @@ app.get('/', (request, response) => {
 
 app.get('/about', (req, res) => {
     args = {
-        pageTitle: 'About Page',
+        pageTitle: 'About Page'
     };
     res.render('about.hbs',args);
+});
+
+app.get('/portfolio', (req, res) => {
+    args = {
+        pageTitle: 'My Portfolio'
+    };
+    res.render('portfolio.hbs', args);
 });
 
 app.get('/bad', (req, res) => {
