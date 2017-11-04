@@ -1,0 +1,7 @@
+node_modules/
+.vs/
+README.md
+node-web-server.njsproj
+node-web-server.sln
+package-lock.json
+server.log

@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Some Website</title>
+</head>
+<body>
+    <h1>{{pageTitle}}</h1>
+    <p>{{screamIt welcomeMessage}}</p>
+    <p>This website is created by {{creator.name}}</p>
+    <p>He/She likes :</p>
+    <ul>
+        {{#each creator.likes}}
+            <li>{{this}}</li>
+        {{/each}}
+    </ul>
+    {{> footer}}
+</body>
+</html>
